@@ -1,0 +1,210 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*cutom properties change if u want*/
+:root{
+    --ff-primary:'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    
+    --fw-reg: 300;
+    --clr-transparent: rgba(0, 0, 0,.7);
+    --clr-one:burlywood;
+    --clr-two:#96bad3;
+    --clr-accent:;
+
+    --fs-h2: 3.25rem;
+    --fs-h3: 2.25rem;
+    --fs-h4: 1.4rem;
+    --fs-body: 1rem;
+}
+
+@media (min-width: 800px){
+    :root{
+    --fs-h2: 4rem;
+    --fs-h3: 3.25rem;
+    --fs-h4: 1.75rem;
+    --fs-body: 1.25rem;
+    }
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+/*Welcome Page*/
+.one{
+/* .___ targets elements with the class attribute set to ___
+    ___ targets the HTML <___> element directly 
+*/
+    background-image: url(black.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 17vw;
+    background-image: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(pexels-piccinng-3075993.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-clip:text;
+    -webkit-background-clip: text;
+    color:transparent;
+}
+/*The Rest*/
+body{
+    
+    background-image: linear-gradient( rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url(pexels-piccinng-3075993.jpg);
+    width: 100%;
+    height: 100vh;
+    margin:0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    color: var(--clr-one);
+    line-height: 1.6;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+/*Image*/
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.intro__img{
+    max-width: 50%;
+}
+/* Tint overlay */
+.tint-overlay {
+  position: absolute;
+  top: 190;
+  left: 32;
+  width: 88.5%;
+  height: 66.5%;
+  background-color: rgba(0, 0, 0, 0.02); /* Adjust the color and opacity */
+  pointer-events: none; /* Allows interactions with the underlying image */
+}
+
+/*Typography*/
+h2, h3, h4{
+    line-height: 1;
+    margin: 0;
+}
+
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+h4 { font-size: var(--fs-h4) }
+
+
+/*Intro*/
+.section__title--kd{
+    font-weight: var(--fw-reg);
+    margin-bottom: 0.3em;
+}
+
+/*Journey*/
+.section__title--journey{
+    margin-bottom: .5em;
+}
+
+/*Kalan D'Soouza*/
+.section__title--kd strong {
+    display: block;
+/*    puts Kalan dsouza on next line  */
+}
+
+/*All subtitles*/
+.section__subtitle{
+    margin: 0;
+    font-size: var(--fs-h4);
+}
+.section__subtitle--kd,
+.section__subtitle--me{
+    background: var(--clr-transparent);
+    padding: 0em .75em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+    opacity: 0.9;
+    color: var(--clr-two);
+} 
+
+/* Header */
+nav { display: none;}
+
+/* Intro section */
+.intro{
+    position: relative;
+}
+
+/*FOR WIDER SCREENS*/
+@media (min-width:600px){
+
+    .intro{
+        height:103vh;
+        display: grid;
+        width: min-content;
+        margin: -10 auto;
+        grid-column-gap: 1em;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+        /*  defines a grid layout to postion the img and elemtns of the intro class*/
+    }
+    .intro__img{
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+        
+    }
+    .tint-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 69%;
+        background-color: rgba(0, 0, 0, 0.02); /* Adjust the color and opacity */
+        pointer-events: none; /* Allows interactions with the underlying image */
+    }
+    .section__title--kd{
+        margin-top: 15px;
+        margin-bottom: -1.5em;
+    }
+    .section__subtitle--kd{
+        align-self: start;
+        grid-column: -1/1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+    }
+}
+/*My Journey*/
+.my-journey{
+    height: 100vh;
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    color: var(--clr-two);
+    text-align: center;
+}
+.section__title--journey{
+    color:var(--clr-one);
+    position: relative;
+}
+.section__title--services::after{
+    
+}
