@@ -2,88 +2,92 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kalan D'Souza</title>
         <link rel="shortcut icon" href="images/favicon.ico">
-
 <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel ="stylesheet" >
-    </head>    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+</head>    
 
-<!-- Welcome -->
+<body>   
     <header>
-        <div class="first Page">
-            <section class="one">
-                <h1>Welcome</h1>
-            </section>
-        </div>
-    </header>
-
-<!-- The Rest -->
-    <body>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class ="hamburger"></span>
-        </button>  
-    
+        </button> 
         <!-- Nav bar -->
         <nav class="nav">
             <ul class="nav__list">
-                <li class ="nav__item"><a href="#kd" class="nav__link">Kalan D'Souza</a></li>
+                <li class ="nav__item"><a href="#home" class="nav__link">Kalan D'Souza</a></li>
                 <li class ="nav__item"><a href="#journey" class="nav__link">My Journey</a></li>
                 <li class ="nav__item"><a href="#me" class="nav__link">About Me</a></li>
             </ul>
-        </nav>
+        </nav> 
+    </header>
 
 <!-- Kalan D'Souza Intro -->
-        <section class="intro" id="kd">
-            <h2 class = "section__title section__title--kd">
-            Hi, I am <strong>Kalan D'Souza</strong>
-            </h2>
-            <p class ="section__subtitle section__subtitle--kd">software developer</p>
-             <div class="intro__img">
-                 <img src="Images/GradPic.jpg" alt="Photo of Kalan D'Souza at Gradutaoin">
-                <div class="tint-overlay"></div>
-            </div>
+        <section class="intro" id="home">
+            <h1 class = "section__title section__title--intro">
+                Hi, I am <strong>Kalan D'Souza</strong>
+            </h1>
+            <p class ="section__subtitle section__subtitle--intro">software developer</p>
+            <img src="Images/GradPic.jpg" alt="A photo of Kalan D'Souza at Gradutaoin">
         </section>
 
 <!-- Journey -->
-        <section class="my-journey" id= "journey">
-            <h3 class="section__title section__title--journey">My Journey</h3>
+    <!--Eductaion--> 
+        <section class="my-journey" id="journey">
+            <h2 class="section__title section__title--journey">My Journey</h2>
             <div class="journey">
                 <div class="education">
-                    <h4>Education</h4>
-                    <p>...</p>
-                    <p>...</p>
-                </div> <!--Eductaion--> 
-                
+                    <h3>Education</h3>
+                    <ul>
+                        <li>BSc in Computer Science Honours with a specialization in Software Engineering at Trent University</li>
+                        <li>St. Brother André Catholic Hight School</li>
+                    </ul>
+                </div> 
+    <!--Experience-->            
                 <div class="experience">
-                    <h4>Experience</h4>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                </div> <!--Experience-->
-                
+                    <h3>Experience</h3>
+                    <h4>Lorex Technology</h4>
+                    <ul>
+                        <li>Information Technology Intern (June - September 2023)</li>
+                        <li>Product Management Intern (June - September 2022)</li>
+                    </ul>
+                </div> 
+    <!--Skills-->           
                 <div class="skills">
-                    <h4>Skills</h4>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                    <p>...</p>
-                </div> <!--Skills-->
-            </div> <!--Journey-->
+                    <h3>Skills</h3>
+                    <h4>Technical Skils</h4>
+                    <ul>
+                        <li>Python, SQL, JavaScript, C#, TypeScript, Java, HTML, CSS</li>
+                        <li>Angular, Node.js, Tailwind CSS, Express.js, Github, Visual Studio, VS Code</li>
+                        <li>Microsoft: Excel, Word, PowerPoint, Power Automate, Sharepoint, Forms</li>
+                    </ul>
+                    <h4>Soft Skils</h4>
+                    <ul>
+                        <li>Quick learner</li>
+                        <li>Communication & collaboration</li>
+                        <li>Independent work</li>
+                        <li>Attention to detail</li>
+                        <li>Identifying & solving problems</li>
+                        <li>Project management</li>
+                    </ul>
+                </div> 
+            </div> 
         </section>
 
 <!-- About Me -->
         <section class="about-me" id="me">
-            <h3 class = "section__titile section__title--me">Who I am</h3>
-            <p class= "section__subtitle section__subtitle--me">Work in progress...</p>
+            <h2 class = "section__titile section__title--me">Who I am</h2>
+            <p class= "section__subtitle section__subtitle--me">Visionary Designer & Developer with a Flair for Creation</p>
             <div class= "about-me__body">
-<!--
-                <p>hduu</p>
-                <p>tesyrsy</p>
--->
+                <p>Hey, hello, welcome! I'm Kalan D'Souza, a developer with a passion for designing, creating and bringing my visions and ideas to life. From painting and sketching, to woodworking and photography my creativity knows no bounds.</p>
+            </div>
+            
             </div>
         </section>
-    </body> 
+   </body> 
 </html>
