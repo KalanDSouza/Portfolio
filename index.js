@@ -12,3 +12,7 @@ const navLinks = document.querySelectorAll('.nav__link')
         document.body.classList.remove('nav-open');
     })
  })
+
+ document.getElementById('btn').addEventListener('click', function() {
+   window.open('Kalan_dsouza.pdf', '_blank');
+});
