@@ -294,7 +294,7 @@ header{
 /* MY JOURNEY SECTION */
 
 .my-journey {
-    background-image: url(/files/Images/blueCITY.jpg);
+    background-image: url(Images/blueCITY.jpg);
     background-color: var(--clr-dark);
     background-size: cover;
     color: var(--clr-light);
