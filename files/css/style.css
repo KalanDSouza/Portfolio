@@ -15,8 +15,8 @@
     --fw-bold: 900;
 
     --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-dark: #151515;
+    --clr-accent: #71d5ec;
 
     --fs-h1: 3rem;
     --fs-h2: 2.5rem;
@@ -37,6 +37,11 @@
         --fs-body: 1.125rem;
     }
     /* adjust the font sizes when the minimum width of the screen is 800px */
+}
+
+/* GENERAL STYLES */
+html{
+    scroll-behavior: smooth;
 }
 
 
@@ -70,7 +75,7 @@ strong { font-weight: var(--fw-bold); }
 /* Buttons */
 .btn{
     display:inline-block;
-    padding: .5em 2.5em;
+    padding: .8em 2.5em;
     margin-top: 6em;
     background: var(--clr-accent);
     color: var(--clr-dark);
@@ -188,6 +193,29 @@ header{
     top: 1em;
     z-index: 1000;
 }
+
+.nav-open .nav{
+    transform: translateX(0);
+    /* opens and closes nav */
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger{
+    transform: rotate(.625turn);
+    /* rotates hamburger */
+}
+
+.nav-open .hamburger::before{
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after{
+    opacity: 0;
+}
+
 .hamburger{
     display: block;
     position: relative;
@@ -196,7 +224,7 @@ header{
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -213,6 +241,7 @@ header{
 
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
+
 
 /* INTRO SECTION */
 .intro{
@@ -285,7 +314,7 @@ header{
     height: 1px;
     margin: 0.5em auto 1em;
     background: var(--clr-light);
-    opacity: 0.3;
+    opacity: 0.6;
 }
 
 .journey{
@@ -311,6 +340,7 @@ header{
     }
 }
 
+/* ABOUT ME  */
 .about-me{
     max-width: 1000px;
     margin: 0 auto;
