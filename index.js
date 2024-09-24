@@ -14,5 +14,5 @@ const navLinks = document.querySelectorAll('.nav__link')
  })
 
  document.getElementById('btn').addEventListener('click', function() {
-   window.open('Kalan_dsouza.pdf', '_blank');
+   window.open('Kalan_DSouza_Resume_2024.pdf', '_blank');
 });
