@@ -6,6 +6,7 @@ const navLinks = document.querySelectorAll('.nav__link')
     document.body.classList.toggle('nav-open');
     // listens for when .navToggle is clicked then adds or removes the class nav-open
  });
+ 
 
  navLinks.forEach(link => {
     link.addEventListener('click', () =>{
